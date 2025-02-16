@@ -7,8 +7,8 @@ import { Component, Input } from '@angular/core'
   styleUrl: './countdown.component.scss',
 })
 export class CountdownComponent {
-  eventTitle = ''
-  eventDate: string = ''
+  eventTitle = 'Christmas day'
+  eventDate: string = '2025-12-25'
   eventTitleId = 'event-title'
   dateTitleId = 'date-title'
   textContainerId = 'title-container'
