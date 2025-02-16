@@ -9,6 +9,7 @@
   height: 80vh;
   width: fit-content;
   max-width: 85vw;
+  max-height: 100vh;
   margin: 64px 24px 36px 24px;
 
   .title-container {
@@ -35,6 +36,7 @@
     }
     width: 278px;
     border: solid;
+    border-color: #757575;
     border-width: 1px;
     border-radius: 4px;
     padding: 11px 11px 18px 11px;
@@ -42,17 +44,20 @@
     display: flex;
     align-items: center;
   }
+
   h1 {
-    margin: 0;
+    margin-bottom: 24px;
     display: block;
     width: fit-content;
     white-space: nowrap;
     color: #72035d;
+    @media (orientation: landscape) {
+      margin-bottom: 0;
+    }
   }
   h2 {
     display: block;
     width: fit-content;
     white-space: nowrap;
-    color: #72035d;
   }
 }

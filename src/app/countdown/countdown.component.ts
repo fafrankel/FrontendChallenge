@@ -16,8 +16,6 @@ export class CountdownComponent {
   ngOnInit() {
     this.eventTitle = localStorage.getItem('eventTitle') || ''
     this.eventDate = localStorage.getItem('eventDate') || ''
-
-    console.log('Init', this.eventTitle, this.eventDate)
   }
 
   ngAfterViewInit() {
@@ -75,6 +73,6 @@ export class CountdownComponent {
     const minutes = Math.floor(diffInSeconds / 60)
     const seconds = diffInSeconds % 60
 
-    return `${days} days, ${hours} hours, ${minutes} min, ${seconds} sec`
+    return `${days} days, ${hours}h, ${minutes}m, ${seconds}s`
   }
 }

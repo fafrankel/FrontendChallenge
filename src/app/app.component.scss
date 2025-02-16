@@ -1,13 +1,9 @@
-
 main {
-  width: 100%;
-  min-height: 100vh;
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-
-  h1 {
-    font-size: 6rem;
-  }
 }

@@ -1,21 +1,21 @@
 @font-face {
-  font-family: 'OpenSourceOne';
+  font-family: 'OpenSouceOne';
   src: url('assets/fonts/open-sauce-one-latin-800-normal.ttf') format('ttf');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSourceOne';
+  font-family: 'OpenSouceOne';
   src: url('assets/fonts/open-sauce-one-latin-400-normal.ttf') format('ttf');
-  font-weight: 800;
+  font-weight: 400;
   font-style: normal;
 }
 
 h2,
 h3,
 body {
-  font-family: 'OpenSourceOne', sans-serif;
+  font-family: 'OpenSouceOne', sans-serif;
   font-weight: 400;
   margin: 0;
   background-color: #f5f3f3;
@@ -30,4 +30,5 @@ input[type='date']::-webkit-calendar-picker-indicator {
 }
 h1 {
   font-weight: 800;
+  margin: 0;
 }
