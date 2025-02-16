@@ -1,6 +1,16 @@
-<div>
-  <h1>{{ eventName }}</h1>
-  <h2>{{ formattedDateString() }}</h2>
-  <input type="text" (input)="onEventNameChange($event)" />
-  <input type="date" (input)="onDateChange($event)" />
+<div class="countdown-container">
+  <div class="title-container" id="{{ textContainerId }}">
+    <h1 id="{{ eventTitleId }}">{{ formattedEventTitleString() }}</h1>
+    <h2 id="{{ dateTitleId }}">{{ formattedDateString() }}</h2>
+  </div>
+  <div class="input-container">
+    <fieldset>
+      <legend>Title</legend>
+      <input value="{{ eventTitle }}" type="text" (input)="onEventNameChange($event)" />
+    </fieldset>
+    <fieldset>
+      <legend>Date</legend>
+      <input type="date" value="{{ eventDate }}" (input)="onDateChange($event)" />
+    </fieldset>
+  </div>
 </div>

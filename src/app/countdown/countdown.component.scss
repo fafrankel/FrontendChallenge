@@ -1,0 +1,58 @@
+.countdown-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  @media (orientation: landscape) {
+    height: fit-content;
+  }
+  height: 80vh;
+  width: fit-content;
+  max-width: 85vw;
+  margin: 64px 24px 36px 24px;
+
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    @media (orientation: landscape) {
+      flex-direction: row;
+    }
+  }
+
+  fieldset {
+    legend {
+      font-size: 14px;
+      line-height: 21px;
+    }
+    width: 278px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 11px 11px 18px 11px;
+    margin: 24px;
+    display: flex;
+    align-items: center;
+  }
+  h1 {
+    margin: 0;
+    display: block;
+    width: fit-content;
+    white-space: nowrap;
+    color: #72035d;
+  }
+  h2 {
+    display: block;
+    width: fit-content;
+    white-space: nowrap;
+    color: #72035d;
+  }
+}
