@@ -1,0 +1,6 @@
+<div>
+  <h1>{{ eventName }}</h1>
+  <h2>{{ formattedDateString() }}</h2>
+  <input type="text" (input)="onEventNameChange($event)" />
+  <input type="date" (input)="onDateChange($event)" />
+</div>
